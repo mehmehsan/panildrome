@@ -252,8 +252,8 @@ export default function App() {
 
       {optn && (
         <h1>
-          Panildrome possible {format} : Yes
           <h4> Panildrome date : {ndate} </h4>
+          Panildrome possible {format} : Yes
         </h1>
       )}
     </div>
