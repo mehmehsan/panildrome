@@ -254,6 +254,14 @@ export default function App() {
         <h1>
           <h4> Panildrome date : {ndate} </h4>
           Panildrome possible {format} : Yes
+          <br />
+          <input
+            type="button"
+            value="Refresh"
+            onClick={() => {
+              window.location.reload();
+            }}
+          />
         </h1>
       )}
     </div>
