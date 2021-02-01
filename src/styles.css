@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+body {
+  background: url("https://www.mosafil.ie/media/images/org/I35716_tm324-mosaikfliesen-keramik-mosaik-hexagon-schwarz-ma.jpg");
+}
+.App {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+#tenet {
+  height: 10rem;
+  width: 10rem;
+}
+
+.rotate {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  0% {
+    transform-origin: 0 100;
+    transform: rotate(30deg);
+  }
+
+  50% {
+    transform-origin: 0 100;
+
+    transform: rotate(210deg);
+  }
+
+  100% {
+    transform-origin: 0 100;
+
+    transform: rotate(30deg);
+  }
+}
