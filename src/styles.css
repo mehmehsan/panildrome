@@ -9,32 +9,10 @@ body {
   color: white;
 }
 
-#tenet {
-  height: 10rem;
-  width: 10rem;
-}
-
-.rotate {
-  animation-duration: 5s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
-}
-
-@keyframes slidein {
-  0% {
-    transform-origin: 0 100;
-    transform: rotate(30deg);
-  }
-
-  50% {
-    transform-origin: 0 100;
-
-    transform: rotate(210deg);
-  }
-
-  100% {
-    transform-origin: 0 100;
-
-    transform: rotate(30deg);
-  }
+input {
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  padding: 0.5rem 0.5rem;
+  background: grey;
+  border-radius: 1rem;
 }

@@ -235,8 +235,9 @@ export default function App() {
 
   return (
     <div className="App">
-      {/* <Img id="tenet" className="rotate" /> */}
       <h1>Palindrome dates</h1>
+      <hr />
+      <br />
       <input type="date" onChange={eventHandler} id="theNumber" />
       <br />
       <br />
@@ -266,6 +267,7 @@ export default function App() {
           <h1>
             <h4> Nearest Palindrome date : {ndate} </h4>
             Panildrome possible {format} : Yes
+            <br />
             <br />
             <input
               type="button"
