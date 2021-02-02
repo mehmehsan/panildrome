@@ -11,8 +11,9 @@ body {
 
 input {
   font-family: "Quicksand", sans-serif;
-  color: black;
+  color: white;
   padding: 0.5rem 0.5rem;
   background: grey;
   border-radius: 1rem;
+  outline: none;
 }

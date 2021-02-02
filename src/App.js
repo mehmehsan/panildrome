@@ -247,6 +247,7 @@ export default function App() {
         <h1>
           Palindrome possible {format} : No
           <br />
+          <br />
           <input
             type="button"
             id="theButton"
