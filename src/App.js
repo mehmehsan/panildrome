@@ -239,7 +239,7 @@ export default function App() {
 
       {!optn && (
         <h1>
-          Panildrome possible {format} : No
+          Palindrome possible {format} : No
           <br />
           <input
             type="button"
@@ -252,7 +252,7 @@ export default function App() {
 
       {optn && (
         <h1>
-          <h4> Panildrome date : {ndate} </h4>
+          <h4> Palindrome date : {ndate} </h4>
           Panildrome possible {format} : Yes
           <br />
           <input
