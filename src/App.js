@@ -212,7 +212,7 @@ export default function App() {
   }
   function clickHandler() {
     loadingSet(true);
-    console.log(loading);
+
     // clearInterval();
     do {
       if (toggleElement === true) {
@@ -230,7 +230,6 @@ export default function App() {
     } while (b < 3650);
     setTimeout(() => {
       loadingSet(false);
-      console.log(loading);
     }, 4200);
   }
 
@@ -256,7 +255,13 @@ export default function App() {
         </h1>
       )}
 
-      {(loading && imgj) ||
+      {(loading && (
+        <div>
+          <h1> checking... </h1>
+          <br />
+          {imgj}
+        </div>
+      )) ||
         (optn && (
           <h1>
             <h4> Nearest Palindrome date : {ndate} </h4>
