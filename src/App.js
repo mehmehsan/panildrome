@@ -223,7 +223,7 @@ export default function App() {
   return (
     <div className="App">
       {/* <Img id="tenet" className="rotate" /> */}
-      <h1>Panildrome dates</h1>
+      <h1>Palindrome dates</h1>
       <input type="date" onChange={eventHandler} id="theNumber" />
       <br />
       <br />
