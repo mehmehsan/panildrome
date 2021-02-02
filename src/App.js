@@ -8,7 +8,7 @@ var imgj = (
   <img
     src="https://img.mensxp.com/media/content/2020/Sep/image-1_5f4e15f55347e.gif"
     alt="loading"
-    width="250"
+    width="300"
   />
 );
 
