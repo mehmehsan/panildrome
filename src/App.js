@@ -235,8 +235,10 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Palindrome dates</h1>
-      <hr />
+      <h1>
+        <strong>Palindrome dates</strong>
+      </h1>
+
       <br />
       <input type="date" onChange={eventHandler} id="theNumber" />
       <br />
