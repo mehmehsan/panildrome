@@ -4,12 +4,20 @@ import "./styles.css";
 var flag1, flag2, flag3;
 var flag6, falg5, falg4;
 var datte, ndatte;
+var imgj = (
+  <img
+    src="https://img.mensxp.com/media/content/2020/Sep/image-1_5f4e15f55347e.gif"
+    alt="loading"
+    width="250"
+  />
+);
 
 export default function App() {
   const [date, setDate] = React.useState("");
   const [optn, setOption] = React.useState();
   const [format, setForrmat] = React.useState();
   const [ndate, setnDate] = React.useState();
+  const [loading, loadingSet] = React.useState();
   var b = 1;
   var toggleElement = true;
 
@@ -201,9 +209,11 @@ export default function App() {
     } else {
       setOption(false);
     }
-    console.log(optn);
   }
   function clickHandler() {
+    loadingSet(true);
+    console.log(loading);
+    // clearInterval();
     do {
       if (toggleElement === true) {
         toggleElement = false;
@@ -218,6 +228,10 @@ export default function App() {
       ndatte = pinput.value;
       eventHandler();
     } while (b < 3650);
+    setTimeout(() => {
+      loadingSet(false);
+      console.log(loading);
+    }, 4200);
   }
 
   return (
@@ -229,14 +243,6 @@ export default function App() {
       <br />
       <h2> Date : {date} </h2>
       <br />
-      <div>
-        {/* <img
-          src="https://img.mensxp.com/media/content/2020/Sep/image-1_5f4e15f55347e.gif"
-          alt="loading"
-          width="250"
-        /> */}
-      </div>
-
       {!optn && (
         <h1>
           Palindrome possible {format} : No
@@ -250,20 +256,21 @@ export default function App() {
         </h1>
       )}
 
-      {optn && (
-        <h1>
-          <h4> Palindrome date : {ndate} </h4>
-          Panildrome possible {format} : Yes
-          <br />
-          <input
-            type="button"
-            value="Refresh"
-            onClick={() => {
-              window.location.reload();
-            }}
-          />
-        </h1>
-      )}
+      {(loading && imgj) ||
+        (optn && (
+          <h1>
+            <h4> Nearest Palindrome date : {ndate} </h4>
+            Panildrome possible {format} : Yes
+            <br />
+            <input
+              type="button"
+              value="Refresh"
+              onClick={() => {
+                window.location.reload();
+              }}
+            />
+          </h1>
+        ))}
     </div>
   );
 }
